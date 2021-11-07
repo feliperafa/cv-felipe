@@ -1,14 +1,39 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
 	display: flex;
 	width: 100%;
-	height: 100px;
+	height: 10rem;
 	border-bottom: 1px solid #00ff7f;
+	align-items: center;
+	flex-direction: row;
+`;
+export const LinkLogo = styled(Link)``;
+
+export const ContainerContent = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 1.25rem 0 1.25rem;
+`;
+
+export const ContainerMenu = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+`;
+export const MenuTitle = styled(Link)`
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	font-weight: 400;
+	font-family: Roboto;
+
+	margin-left: 1rem;
 `;
 
 export const ContainerLogo = styled.div`
-	width: 100%;
+	display: flex;
 `;
 
 export const Logo = styled.img`
