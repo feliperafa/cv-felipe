@@ -9,7 +9,58 @@ export const Container = styled.header`
 	align-items: center;
 	flex-direction: row;
 `;
-export const LinkLogo = styled(Link)``;
+export const LinkLogo = styled(Link)`
+	display: flex;
+
+	align-items: center;
+	text-decoration: none;
+`;
+
+export const LogoName = styled.h3`
+	display: flex;
+	margin-left: 3rem;
+
+	font-family: 'Chakra Petch', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	overflow: hidden;
+	white-space: nowrap;
+
+	color: #00ff7f;
+
+	/* :before {
+		transform: scaleX(0);
+		transform-origin: bottom right;
+	}
+	:before {
+		color: #fff;
+		transition: transform 0.3s ease;
+	} */
+	:hover {
+		color: #fff;
+	}
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	@keyframes blink-caret {
+		from,
+		to {
+			border-color: transparent;
+		}
+		50% {
+			border-color: #00ff7f;
+		}
+	}
+
+	animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+`;
 
 export const ContainerContent = styled.div`
 	width: 100%;
@@ -26,10 +77,17 @@ export const ContainerMenu = styled.div`
 export const MenuTitle = styled(Link)`
 	font-size: 1.8rem;
 	line-height: 2.4rem;
-	font-weight: 400;
-	font-family: Roboto;
-
+	font-weight: 300;
+	font-family: 'Chakra Petch', sans-serif;
+	text-decoration: none;
 	margin-left: 1rem;
+	color: #00ff7f;
+	border-radius: 0.4rem;
+
+	:hover {
+		box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+			0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+	}
 `;
 
 export const ContainerLogo = styled.div`
@@ -43,29 +101,7 @@ export const Logo = styled.img`
 	transition: 0.3ms;
 	border: 1px solid #00ff7f;
 
-	@keyframes on-off {
-		from {
-			border: 1px solid #00ff7f;
-		}
-		12% {
-			border: 2px solid #00ff7f;
-		}
-		14% {
-			border: 1px solid #00ff7f;
-		}
-		20% {
-			border: 2px solid #00ff7f;
-		}
-		22% {
-			border: 1px solid #00ff7f;
-		}
-		35% {
-			border: 2px solid #00ff7f;
-		}
-		to {
-			border: 1px solid #00ff7f;
-		}
+	:hover {
+		border: 2px solid #fff;
 	}
-
-	animation: on-off 5s infinite;
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { Contato } from '../pages/Contato';
 import { Experiencia } from '../pages/Experiencia';
 import { PageHome } from '../pages/Home';
@@ -8,12 +8,12 @@ import { Sobre } from '../pages/Sobre';
 
 export function MainRoutes() {
 	return (
-		<Routes>
-			<Route path="/" element={<PageHome />} />
-			<Route path="/sobre" element={<Sobre />} />
-			<Route path="/experiencia" element={<Experiencia />} />
-			<Route path="/contato" element={<Contato />} />
-			<Route path="/rede-social" element={<RedeSocial />} />
-		</Routes>
+		<Switch>
+			<Route path="/" exact component={PageHome} />
+			<Route path="/sobre" exact component={Sobre} />
+			<Route path="/experiencias" exact component={Experiencia} />
+			<Route path="/contatos" exact component={Contato} />
+			<Route path="/rede-sociais" exact component={RedeSocial} />
+		</Switch>
 	);
 }

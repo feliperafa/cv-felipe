@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+
 import {
 	Container,
 	ContainerLogo,
@@ -7,10 +8,10 @@ import {
 	ContainerMenu,
 	MenuTitle,
 	LinkLogo,
+	LogoName,
 } from './style';
 
 // Iports icones
-
 import LogoPerfil from '../../images/foto-perfil.jpg';
 
 export function Header() {
@@ -21,24 +22,25 @@ export function Header() {
 		},
 		{
 			nameMenu: 'Experiencia',
-			link: '/experiencia',
+			link: '/experiencias',
 		},
 		{
 			nameMenu: 'Contato',
-			link: '/contato',
+			link: '/contatos',
 		},
 		{
 			nameMenu: 'Rede sociais',
-			link: '/rede-social',
+			link: '/rede-sociais',
 		},
 	];
-	console.log(inforData);
+
 	return (
 		<Container>
 			<ContainerContent>
 				<ContainerLogo>
 					<LinkLogo to="/">
 						<Logo src={LogoPerfil} alt="logo" />
+						<LogoName>Felipe Barros</LogoName>
 					</LinkLogo>
 				</ContainerLogo>
 				<ContainerMenu>
