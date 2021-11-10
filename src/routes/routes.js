@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Contato } from '../pages/Contato';
-import { Experiencia } from '../pages/Experiencia';
-import { PageHome } from '../pages/Home';
-import { RedeSocial } from '../pages/ReseSocial';
-import { Sobre } from '../pages/Sobre';
+import { PageHome } from '../pages/home/Home';
+import { Sobre } from '../pages/sobre/Sobre';
+import { Experiencia } from '../pages/experiencia/Experiencia';
+import { Contato } from '../pages/contato/Contato';
+import { RedeSocial } from '../pages/rede-social/ReseSocial';
 
 export function MainRoutes() {
 	return (
