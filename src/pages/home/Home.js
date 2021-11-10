@@ -42,7 +42,7 @@ export function PageHome() {
 						</GeneralInformation>
 						<GeneralInformation>
 							<FaBaby />
-							<Information>Filhos(as): {data.sons}</Information>
+							<Information>Filhos: {data.sons}</Information>
 						</GeneralInformation>
 						<GeneralInformation>
 							<FaHeart />
