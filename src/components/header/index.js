@@ -3,16 +3,12 @@ import { Fragment } from 'react';
 import {
 	Container,
 	ContainerLogo,
-	Logo,
 	ContainerContent,
 	ContainerMenu,
 	MenuTitle,
 	LinkLogo,
 	LogoName,
 } from './style';
-
-// imports icones
-import LogoPerfil from '../../images/foto-perfil.jpg';
 
 //import informações
 import { InforData } from './data';
@@ -23,7 +19,7 @@ export function Header() {
 			<ContainerContent>
 				<ContainerLogo>
 					<LinkLogo to="/">
-						<Logo src={LogoPerfil} alt="logo" />
+						{/* <Logo src={LogoPerfil} alt="logo" /> */}
 						<LogoName>Felipe Barros</LogoName>
 					</LinkLogo>
 				</ContainerLogo>
