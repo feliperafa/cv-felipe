@@ -18,7 +18,6 @@ export const LinkLogo = styled(Link)`
 
 export const LogoName = styled.h3`
 	display: flex;
-	margin-left: 3rem;
 
 	font-family: 'Chakra Petch', sans-serif;
 	font-weight: 300;
@@ -28,14 +27,6 @@ export const LogoName = styled.h3`
 
 	color: #00ff7f;
 
-	/* :before {
-		transform: scaleX(0);
-		transform-origin: bottom right;
-	}
-	:before {
-		color: #fff;
-		transition: transform 0.3s ease;
-	} */
 	:hover {
 		color: #fff;
 	}
@@ -92,16 +83,4 @@ export const MenuTitle = styled(Link)`
 
 export const ContainerLogo = styled.div`
 	display: flex;
-`;
-
-export const Logo = styled.img`
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	transition: 0.3ms;
-	border: 1px solid #00ff7f;
-
-	:hover {
-		border: 2px solid #fff;
-	}
 `;
