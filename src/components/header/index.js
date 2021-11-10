@@ -11,29 +11,13 @@ import {
 	LogoName,
 } from './style';
 
-// Iports icones
+// imports icones
 import LogoPerfil from '../../images/foto-perfil.jpg';
 
-export function Header() {
-	const inforData = [
-		{
-			nameMenu: 'Sobre',
-			link: '/sobre',
-		},
-		{
-			nameMenu: 'Experiencia',
-			link: '/experiencias',
-		},
-		{
-			nameMenu: 'Contato',
-			link: '/contatos',
-		},
-		{
-			nameMenu: 'Rede sociais',
-			link: '/rede-sociais',
-		},
-	];
+//import informações
+import { InforData } from './data';
 
+export function Header() {
 	return (
 		<Container>
 			<ContainerContent>
@@ -44,8 +28,8 @@ export function Header() {
 					</LinkLogo>
 				</ContainerLogo>
 				<ContainerMenu>
-					{inforData &&
-						inforData.map((el, index) => (
+					{InforData &&
+						InforData.map((el, index) => (
 							<Fragment key={index}>
 								<MenuTitle to={el.link}>{el.nameMenu}</MenuTitle>
 							</Fragment>
