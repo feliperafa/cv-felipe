@@ -16,7 +16,7 @@ import { FaCity, FaSort, FaBaby, FaPhoneAlt, FaHeart } from 'react-icons/fa';
 import { Data } from './data';
 export function PageHome() {
 	const data = Data[0];
-	console.log(data);
+
 	return (
 		<Container>
 			{data && (
