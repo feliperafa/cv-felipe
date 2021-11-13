@@ -11,7 +11,11 @@ import {
 	GeneralInformation,
 	Information,
 	ContainerGeneral,
+	AreaDescription,
+	ContainerAreaDescription,
+	AreaDescriptionTitle,
 } from './style';
+
 import { FaCity, FaSort, FaBaby, FaPhoneAlt, FaHeart } from 'react-icons/fa';
 import { Data } from './data';
 export function PageHome() {
@@ -53,6 +57,12 @@ export function PageHome() {
 							<Information>Tel: {data.telephone}</Information>
 						</GeneralInformation>
 					</ContainerGeneralInformation>
+					<ContainerAreaDescription>
+						<AreaDescriptionTitle>{data.titleDescription}</AreaDescriptionTitle>
+						{data.areaDescription.map((_) => (
+							<AreaDescription>{_}</AreaDescription>
+						))}
+					</ContainerAreaDescription>
 				</ContainerGeneral>
 			)}
 		</Container>

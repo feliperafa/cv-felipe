@@ -63,3 +63,31 @@ export const GeneralInformation = styled.div`
 export const Information = styled.p`
 	display: flex;
 `;
+
+export const ContainerAreaDescription = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+`;
+export const AreaDescriptionTitle = styled.h2`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem;
+	font-size: 3rem;
+	font-family: 'Chakra Petch', sans-serif;
+	font-weight: 300;
+`;
+export const AreaDescription = styled.p`
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 2rem;
+	line-height: 3rem;
+
+	:first-of-type {
+		margin-bottom: 2rem;
+	}
+`;
