@@ -2,17 +2,26 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	padding: 3rem 2rem 3rem 2rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 	flex-direction: column;
+	width: 100%;
 `;
 export const ContainerGeneral = styled.div`
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 `;
 
 export const ContainerPageHome = styled.div`
 	display: flex;
 	width: 100%;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 `;
 
 export const ContainerTitle = styled.div`
@@ -31,12 +40,21 @@ export const Title = styled.h2`
 
 export const ContainerPhotoUser = styled.div`
 	display: flex;
+
+	@media (max-width: 600px) {
+		order: 1;
+		margin-top: 3rem;
+	}
 `;
 
 export const PhotoUser = styled.img`
 	border-radius: 100%;
 	border: 1px solid #00ff7f;
 	width: 10rem;
+
+	@media (max-width: 600px) {
+		width: 8rem;
+	}
 	:hover {
 		border: 1px solid #fff;
 	}
@@ -47,6 +65,11 @@ export const ContainerGeneralInformation = styled.div`
 	padding-top: 5rem;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	width: 100%;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 `;
 
 export const GeneralInformation = styled.div`
@@ -54,6 +77,7 @@ export const GeneralInformation = styled.div`
 	font-size: 2rem;
 	font-family: 'Chakra Petch', sans-serif;
 	font-weight: 300;
+	margin-bottom: 2rem;
 
 	svg {
 		margin-right: 2rem;
