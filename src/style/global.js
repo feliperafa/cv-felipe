@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { color } from './variavelGlobal';
 
 /*RESET DO CSS INICIO*/
 export default createGlobalStyle`
@@ -9,8 +10,8 @@ export default createGlobalStyle`
   }
   
   body {
-    background: #111111;
-    color: #00ff7f;
+    background:${color.siteBackGroud};
+    color: ${color.greenNeon};
   }
   
   /*RESET DO CSS FIM*/
