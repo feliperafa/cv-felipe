@@ -1,10 +1,11 @@
 import React from 'react';
+import { Accordion } from '../../components/accordion';
+import { Container } from './style';
 
 export function Experiencia() {
 	return (
-		<div>
-			<h1>Bem Vindo</h1>
-			<h1>Pagina Experiencia</h1>
-		</div>
+		<Container>
+			<Accordion />
+		</Container>
 	);
 }

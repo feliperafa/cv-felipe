@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import { css } from 'styled-components';
 import { color } from '../../style/variavelGlobal';
 
 export const Container = styled.header`
