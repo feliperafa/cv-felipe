@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { color } from '../../style/variavelGlobal';
 
 export const Container = styled.div`
 	display: flex;
 	margin-top: 3rem;
-	margin-bottom: 3rem;
 	padding-right: 2rem;
 	padding-left: 2rem;
+
 	flex-direction: column;
 	width: 100%;
 `;
@@ -49,7 +50,7 @@ export const ContainerPhotoUser = styled.div`
 
 export const PhotoUser = styled.img`
 	border-radius: 100%;
-	border: 1px solid #00ff7f;
+	border: 1px solid ${color.greenNeon};
 	width: 10rem;
 
 	@media (max-width: 600px) {
