@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+
+//import css
 import {
 	Container,
 	ContainerLogo,
@@ -12,17 +14,22 @@ import {
 import { InforData } from './data';
 
 export function Header() {
-	let show = true;
+	useEffect(() => {
+		let show = true;
+		let menuSection;
+		let menuToggle;
+		if (typeof window !== 'undefined') {
+			menuSection = document.querySelector('.menu-section');
+			menuToggle = menuSection.querySelector('.menu-toggle');
 
-	const menuSection = document.querySelector('.menu-section');
-	const menuToggle = menuSection.querySelector('.menu-toggle');
+			menuToggle.addEventListener('click', () => {
+				document.body.style.overflow = show ? 'hidden' : 'initial';
 
-	menuToggle.addEventListener('click', () => {
-		document.body.style.overflow = show ? 'hidden' : 'initial';
-
-		menuSection.classList.toggle('on', show);
-		show = !show;
-	});
+				menuSection.classList.toggle('on', show);
+				show = !show;
+			});
+		}
+	}, []);
 
 	// const [show, setShow] = useState(false);
 

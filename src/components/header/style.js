@@ -61,29 +61,37 @@ export const ContainerContent = styled.div`
 	justify-content: space-between;
 	margin: 0 1.25rem 0 1.25rem;
 
-	.menu-section {
+	nav {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.menu-toggle {
-		width: 40px;
-		height: 30px;
-		margin-right: 40px;
-	}
-
-	.one,
-	.two,
-	.three {
-		background-color: ${color.greenNeon};
-		height: 5px;
+		justify-content: center;
 		width: 100%;
-		margin: 6px auto;
-
-		transition-duration: 0.3s;
+		height: 100%;
+		align-items: center;
 	}
 
 	@media (max-width: 600px) {
+		.menu-section {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.menu-toggle {
+			width: 4rem;
+			height: 3rem;
+			margin-right: 2rem;
+		}
+
+		.one,
+		.two,
+		.three {
+			background-color: ${color.greenNeon};
+			height: 0.5rem;
+			width: 100%;
+			margin: 0.6rem auto;
+
+			transition-duration: 0.3s;
+		}
+
 		nav {
 			display: none;
 		}
@@ -114,12 +122,12 @@ export const ContainerContent = styled.div`
 
 		.menu-section.on .menu-toggle {
 			position: absolute;
-			right: 0;
-			top: 15px;
+			right: 2.5rem;
+			top: 1.5rem;
 		}
 
 		.menu-section.on .menu-toggle .one {
-			transform: rotate(45deg) translate(7px, 7px);
+			transform: rotate(45deg) translate(7px, 5px);
 		}
 
 		.menu-section.on .menu-toggle .two {
@@ -127,13 +135,15 @@ export const ContainerContent = styled.div`
 		}
 
 		.menu-section.on .menu-toggle .three {
-			transform: rotate(-45deg) translate(8px, -9px);
+			transform: rotate(-45deg) translate(8px, -5px);
 		}
 
 		.menu-section.on nav {
 			text-align: center;
 			display: block;
 			width: 100%;
+			position: absolute;
+			top: 8rem;
 		}
 		.menu-section.on nav a {
 			transition-duration: 0.5s;
@@ -150,24 +160,9 @@ export const ContainerMenu = styled.div`
 	align-items: center;
 `;
 
-// export const MenuToggle = styled.div`
-// 	width: 40px;
-// 	height: 30px;
-// 	margin-right: 20px;
-
-// 	.one,
-// 	.two,
-// 	.three {
-// 		background-color: ${color.greenNeon};
-// 		height: 5px;
-// 		width: 100%;
-// 		margin: 6px auto;
-// 	}
-// `;
-
 export const MenuTitle = styled(Link)`
 	display: flex;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	line-height: 2.4rem;
 	font-weight: 300;
 	font-family: 'Chakra Petch', sans-serif;

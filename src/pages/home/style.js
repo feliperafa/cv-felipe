@@ -4,12 +4,11 @@ import { color } from '../../style/variavelGlobal';
 export const Container = styled.div`
 	display: flex;
 	margin-top: 3rem;
-	margin-right: 2rem;
-	margin-left: 2rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 
 	flex-direction: column;
 	width: 100%;
-	max-width: 90%;
 `;
 export const ContainerGeneral = styled.div`
 	display: flex;
